@@ -1,0 +1,228 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --void: #080B12;
+    --surface: #0E1420;
+    --elevated: #131B2E;
+    --border: #1E2D4A;
+    --phosphor: #00D68F;
+    --phosphor-dim: #00D68F18;
+    --glow: #B8F0D8;
+    --sequence: #8B5CF6;
+    --white: #E2E8F0;
+    --muted: #64748B;
+    --mutation-red: #F87171;
+    --scroll-p: 0;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--void);
+  color: var(--white);
+}
+
+section[id] {
+  scroll-margin-top: 80px;
+}
+
+/* ── Entrance animations ── */
+@media (prefers-reduced-motion: no-preference) {
+  .section-animate {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  .section-animate.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Cinematic reveal for HowItWorks step panels */
+  .step-reveal {
+    opacity: 0;
+    transform: translateX(-24px) scale(0.98);
+    transition: opacity 0.5s cubic-bezier(0.23,1,0.32,1),
+                transform 0.5s cubic-bezier(0.23,1,0.32,1);
+  }
+  .step-reveal.step-visible {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .section-animate,
+  .step-reveal { opacity: 1; transform: none; }
+}
+
+/* ── Typography ── */
+@layer utilities {
+  .text-display {
+    font-family: 'Instrument Serif', serif;
+    font-weight: 400;
+    letter-spacing: -0.03em;
+    line-height: 0.95;
+  }
+  .text-h1 {
+    font-size: clamp(44px, 8vw, 96px);
+  }
+  .text-h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(32px, 5vw, 52px);
+    font-weight: 300;
+    letter-spacing: -0.02em;
+  }
+  .mono-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--phosphor);
+  }
+  .text-body {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.75;
+    color: var(--muted);
+  }
+  .text-italic-accent {
+    font-family: 'Instrument Serif', serif;
+    font-style: italic;
+  }
+  .text-outline {
+    -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.2);
+    color: transparent;
+  }
+  .text-outline-phosphor {
+    -webkit-text-stroke: 1.5px rgba(0, 214, 143, 0.3);
+    color: transparent;
+  }
+}
+
+/* ── Keyframe animations ── */
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+  @keyframes slideUpFade {
+    from { opacity: 0; transform: translateY(16px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes shimmer {
+    0%   { transform: translateX(-120%); }
+    100% { transform: translateX(120%); }
+  }
+  @keyframes helixFloat {
+    0%   { transform: translateY(0); }
+    100% { transform: translateY(-40px); }
+  }
+  @keyframes marquee {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  @keyframes pulseFill {
+    0%, 100% { width: 18%; }
+    25%  { width: 72%; }
+    50%  { width: 94%; }
+    75%  { width: 45%; }
+  }
+  @keyframes typewriterBlink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+  @keyframes borderReveal {
+    from { clip-path: inset(0 100% 0 0); }
+    to   { clip-path: inset(0 0% 0 0); }
+  }
+}
+
+/* ── Section gradient bleeds ── */
+.bleed-void-to-surface  { background: linear-gradient(to bottom, var(--void), var(--surface)); }
+.bleed-surface-to-void  { background: linear-gradient(to bottom, var(--surface), var(--void)); }
+
+/* ── CTA form focus ── */
+.form-input:focus {
+  border-color: var(--phosphor) !important;
+  box-shadow: 0 0 0 3px rgba(0, 214, 143, 0.12);
+  outline: none;
+}
+
+/* ── Shimmer button pseudo ── */
+.shimmer-btn {
+  position: relative;
+  overflow: hidden;
+}
+.shimmer-btn::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(105deg, transparent 30%, rgba(255,255,255,0.12) 50%, transparent 70%);
+  transform: translateX(-120%);
+  transition: none;
+}
+.shimmer-btn:hover::after {
+  animation: shimmer 550ms ease-in-out forwards;
+}
+
+/* ── Stat card top-border reveal ── */
+.stat-border-reveal {
+  position: relative;
+}
+.stat-border-reveal::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: var(--phosphor);
+  clip-path: inset(0 100% 0 0);
+}
+.stat-border-reveal.counted::before {
+  animation: borderReveal 400ms cubic-bezier(0.23,1,0.32,1) forwards;
+}
+
+/* ── GPU compositing hints ── */
+.will-change-transform { will-change: transform; }
+
+/* ── Nav active link underline ── */
+.nav-link {
+  position: relative;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0; right: 0;
+  height: 1px;
+  background: var(--phosphor);
+  transform: scaleX(0);
+  transition: transform 0.25s cubic-bezier(0.23,1,0.32,1);
+}
+.nav-link.active::after {
+  transform: scaleX(1);
+}
+
+/* ── Custom Utilities ── */
+@layer components {
+  .btn-phosphor-ghost {
+    @apply border border-phosphor text-phosphor px-8 py-3 rounded-full transition-all duration-300 hover:bg-phosphor/10 hover:shadow-[0_0_24px_rgba(0,214,143,0.2)];
+  }
+}
+
+/* ── Mobile hero override ── */
+@media (max-width: 767px) {
+  .text-h1 {
+    font-size: 44px !important;
+  }
+}
