@@ -163,20 +163,20 @@ export default function Hero() {
 
           <h1 className="text-[38px] sm:text-[60px] lg:text-[82px] font-sans font-black text-white leading-[0.82] tracking-[-0.03em] mb-8 flex flex-col items-start translate-x-[-0.04em] uppercase select-none">
             <span className="block overflow-hidden">
-              <span className="inline-block opacity-0 translate-y-full animate-[slideUpFade_0.6s_ease-out_0.25s_forwards] origin-left" style={{ transform: 'scaleX(1.4)' }}>Decode</span>
+              <span className="inline-block opacity-0 translate-y-full animate-[slideUpFade_0.6s_ease-out_0.25s_forwards] origin-left transform scale-x-100 sm:scale-x-110 lg:scale-x-[1.4]">Decode</span>
             </span>
             <span className="block overflow-hidden">
-              <span className="inline-block opacity-0 translate-y-full animate-[slideUpFade_0.6s_ease-out_0.3s_forwards] origin-left" style={{ transform: 'scaleX(1.4)' }}>The</span>
+              <span className="inline-block opacity-0 translate-y-full animate-[slideUpFade_0.6s_ease-out_0.3s_forwards] origin-left transform scale-x-100 sm:scale-x-110 lg:scale-x-[1.4]">The</span>
             </span>
             <span className="block overflow-hidden w-full">
-              <span className="inline-block text-phosphor opacity-0 translate-y-full animate-[slideUpFade_0.6s_ease-out_0.35s_forwards] origin-left" style={{ transform: 'scaleX(1.4)' }}>Language</span>
+              <span className="inline-block text-phosphor opacity-0 translate-y-full animate-[slideUpFade_0.6s_ease-out_0.35s_forwards] origin-left transform scale-x-100 sm:scale-x-110 lg:scale-x-[1.4]">Language</span>
             </span>
             <div className="flex gap-[0.2em] overflow-hidden">
-              <span className="inline-block opacity-0 translate-y-full animate-[slideUpFade_0.6s_ease-out_0.4s_forwards] origin-left" style={{ transform: 'scaleX(1.4)' }}>Of</span>
-              <span className="inline-block text-outline opacity-0 translate-y-full animate-[slideUpFade_0.6s_ease-out_0.45s_forwards] origin-left" style={{ transform: 'scaleX(1.4)' }}>Your</span>
+              <span className="inline-block opacity-0 translate-y-full animate-[slideUpFade_0.6s_ease-out_0.4s_forwards] origin-left transform scale-x-100 sm:scale-x-110 lg:scale-x-[1.4]">Of</span>
+              <span className="inline-block text-outline opacity-0 translate-y-full animate-[slideUpFade_0.6s_ease-out_0.45s_forwards] origin-left transform scale-x-100 sm:scale-x-110 lg:scale-x-[1.4]">Your</span>
             </div>
             <span className="block overflow-hidden">
-              <span className="inline-block text-outline-phosphor opacity-0 translate-y-full animate-[slideUpFade_0.6s_ease-out_0.5s_forwards] origin-left" style={{ transform: 'scaleX(1.4)' }}>DNA</span>
+              <span className="inline-block text-outline-phosphor opacity-0 translate-y-full animate-[slideUpFade_0.6s_ease-out_0.5s_forwards] origin-left transform scale-x-100 sm:scale-x-110 lg:scale-x-[1.4]">DNA</span>
             </span>
           </h1>
 

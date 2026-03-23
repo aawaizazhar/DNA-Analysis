@@ -201,7 +201,7 @@ export default function HowItWorks() {
             </div>
           </div>
 
-          <h2 className="text-[36px] sm:text-[48px] lg:text-[60px] font-sans font-black text-white leading-[1.0] tracking-[-0.02em] mb-4 inline-block capitalize" style={{ transform: 'scaleX(1.4)', transformOrigin: 'left center' }}>
+          <h2 className="text-[36px] sm:text-[48px] lg:text-[60px] font-sans font-black text-white leading-[1.0] tracking-[-0.02em] mb-4 inline-block capitalize transform origin-left scale-x-100 sm:scale-x-[1.2] lg:scale-x-[1.4]">
             Four Steps To <span className="text-phosphor">Full Clarity</span>
           </h2>
         </div>

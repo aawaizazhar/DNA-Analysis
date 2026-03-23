@@ -93,7 +93,7 @@ export default function Features() {
             </div>
           </div>
           
-          <h2 className="text-[42px] sm:text-[56px] lg:text-[72px] font-sans font-black text-white leading-[1.0] tracking-[-0.02em] mb-6 inline-block capitalize" style={{ transform: 'scaleX(1.2)', transformOrigin: 'left center' }}>
+          <h2 className="text-[42px] sm:text-[56px] lg:text-[72px] font-sans font-black text-white leading-[1.0] tracking-[-0.02em] mb-6 inline-block capitalize transform origin-left scale-x-100 sm:scale-x-110 lg:scale-x-[1.2]">
             Everything You Need, <span className="text-phosphor">Unified.</span>
           </h2>
           <p className="text-[#64748B] font-mono text-[13px] leading-[1.8] max-w-[440px] mt-4">
