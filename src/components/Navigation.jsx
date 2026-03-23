@@ -85,7 +85,6 @@ export default function Navigation() {
         <div className="max-w-[1440px] mx-auto px-6 md:px-10 flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center cursor-pointer select-none" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-            <img src="/logo.png" alt="DNAAnalyzer Logo" className="w-8 h-8 md:w-10 md:h-10 rounded-full border border-phosphor mr-2" />
             <span className="font-sans font-black text-[20px] tracking-[-0.04em] text-white uppercase">DNA</span>
             <span className="font-sans font-black text-[20px] tracking-[-0.04em] text-phosphor uppercase">Analyzer</span>
           </Link>
