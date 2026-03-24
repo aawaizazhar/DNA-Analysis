@@ -83,11 +83,8 @@ export default function Navigation() {
         }`}
       >
         <div className="max-w-[1440px] mx-auto px-6 md:px-10 flex items-center justify-between">
-          {/* Logo */}
-          <Link to="/" className="flex items-center cursor-pointer select-none" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-            <span className="font-sans font-black text-[20px] tracking-[-0.04em] text-white uppercase">DNA</span>
-            <span className="font-sans font-black text-[20px] tracking-[-0.04em] text-phosphor uppercase">Analyzer</span>
-          </Link>
+          {/* Logo Removed as per request */}
+          <div className="flex items-center" />
 
           {/* Desktop Links (Centered) */}
           <div className="hidden md:flex items-center absolute left-1/2 -translate-x-1/2 space-x-10">

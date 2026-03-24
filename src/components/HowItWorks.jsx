@@ -33,7 +33,7 @@ function StepItem({ step, index, isActive }) {
         style={{ 
           fontSize: '72px',
           lineHeight: '0.8',
-          transform: `scaleX(1.8) ${isActive ? 'scale(1.05)' : 'scale(1)'}`,
+          transform: `scaleX(1.4) ${isActive ? 'scale(1.05)' : 'scale(1)'}`,
           transformOrigin: 'left center',
           letterSpacing: '-0.06em'
         }}
@@ -49,7 +49,7 @@ function StepItem({ step, index, isActive }) {
         style={{ 
           fontSize: '48px',
           lineHeight: '0.8',
-          transform: 'scaleX(1.5)',
+          transform: 'scaleX(1.2)',
           transformOrigin: 'left center',
           letterSpacing: '-0.06em'
         }}
@@ -201,7 +201,7 @@ export default function HowItWorks() {
             </div>
           </div>
 
-          <h2 className="text-[36px] sm:text-[48px] lg:text-[60px] font-sans font-black text-white leading-[1.0] tracking-[-0.02em] mb-4 inline-block capitalize transform origin-left scale-x-100 sm:scale-x-[1.2] lg:scale-x-[1.4]">
+          <h2 className="text-[36px] sm:text-[48px] lg:text-[60px] font-sans font-black text-white leading-[1.0] tracking-[-0.02em] mb-4 inline-block capitalize transform origin-left scale-x-100 sm:scale-x-[1.1] lg:scale-x-[1.2]">
             Four Steps To <span className="text-phosphor">Full Clarity</span>
           </h2>
         </div>
