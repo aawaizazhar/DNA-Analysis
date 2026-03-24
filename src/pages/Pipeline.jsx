@@ -176,18 +176,17 @@ export default function Pipeline() {
     <main className="bg-void min-h-screen text-white pt-32">
       <div className="max-w-[1240px] mx-auto px-6 md:px-12">
         {/* Header */}
-        <div className="text-center mb-16 lg:mb-24">
-          <div className="inline-flex items-center justify-center mb-6 border border-phosphor/20 bg-phosphor/5 px-4 py-1.5 rounded-full">
+        <div className="text-left mb-8 lg:mb-12">
+          <div className="inline-flex items-center justify-start mb-6 border border-phosphor/20 bg-phosphor/5 px-4 py-1.5 rounded-full">
             <div className="w-1.5 h-1.5 rounded-full bg-phosphor shadow-[0_0_8px_rgba(0,214,143,0.8)] mr-3" />
             <span className="font-mono text-[10px] text-phosphor uppercase tracking-[0.2em] font-medium">Architecture</span>
           </div>
-          <h1 className="text-[48px] md:text-[64px] lg:text-[80px] font-sans font-black leading-[1.0] tracking-[-0.04em] mb-6 inline-block" style={{ transform: 'scaleX(1.1)', transformOrigin: 'center' }}>
+          <h1 className="text-[48px] md:text-[64px] lg:text-[80px] font-sans font-black leading-[1.0] tracking-[-0.04em] mb-6 block" style={{ transform: 'scaleX(1.1)', transformOrigin: 'left center' }}>
             The Diagnostic Pipeline. <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-white to-white/30">Re-engineered.</span>
           </h1>
-          <p className="font-mono text-[14px] md:text-[16px] text-muted max-w-[500px] mx-auto leading-relaxed">
-            From raw FASTQ to finalized ACMG-compliant report. Fully automated. Mathematically rigorous. Unbelievably fast.
-          </p>
+          <p className="font-mono text-[14px] md:text-[16px] text-muted max-w-[500px] leading-relaxed">
+            From raw FASTQ to finalized ACMG-compliant report. Fully automated. Mathematically rigorous. Unbelievably fast.          </p>
         </div>
 
         {/* Steps container */}

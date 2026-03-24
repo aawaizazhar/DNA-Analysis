@@ -13,7 +13,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="min-h-screen bg-void pt-[160px] pb-32 px-6 overflow-hidden">
+    <div className="min-h-screen bg-void pt-[160px] pb-32 px-6 overflow-x-hidden">
       {/* Background Decor */}
       <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-phosphor/5 blur-[160px] rounded-full -translate-y-1/2 translate-x-1/2" />
       <div className="absolute bottom-0 left-0 w-[800px] h-[800px] bg-purple-500/5 blur-[160px] rounded-full translate-y-1/2 -translate-x-1/2" />
