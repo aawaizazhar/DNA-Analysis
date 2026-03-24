@@ -5,9 +5,17 @@ export default function CustomCursor() {
   const ringRef = useRef(null);
   const [isPointer, setIsPointer] = useState(false);
   const [isHidden, setIsHidden] = useState(true);
+  const [isTouch, setIsTouch] = useState(false);
 
   useEffect(() => {
+    // Detect touch device
+    const checkTouch = () => {
+      setIsTouch('ontouchstart' in window || navigator.maxTouchPoints > 0);
+    };
+    checkTouch();
+
     const onMouseMove = (e) => {
+      if (isTouch) return;
       setIsHidden(false);
       const { clientX: x, clientY: y } = e;
       
@@ -26,6 +34,7 @@ export default function CustomCursor() {
     const onMouseLeave = () => setIsHidden(true);
 
     const checkPointer = () => {
+      if (isTouch) return;
       const hoveredEl = document.querySelectorAll(':hover');
       const lastEl = hoveredEl[hoveredEl.length - 1];
       if (lastEl) {
@@ -49,7 +58,9 @@ export default function CustomCursor() {
       document.removeEventListener('mouseleave', onMouseLeave);
       window.removeEventListener('mouseover', checkPointer);
     };
-  }, []);
+  }, [isTouch]);
+
+  if (isTouch) return null;
 
   return (
     <>

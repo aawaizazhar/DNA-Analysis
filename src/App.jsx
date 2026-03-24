@@ -16,7 +16,7 @@ import Applications from './pages/Applications';
 function App() {
   return (
     <Router>
-      <div className="min-h-screen font-sans bg-void text-white cursor-none selection:bg-phosphor selection:text-void">
+      <div className="min-h-screen font-sans bg-void text-white md:cursor-none selection:bg-phosphor selection:text-void">
         <CustomCursor />
         <Navigation />
         <Routes>

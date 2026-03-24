@@ -35,16 +35,16 @@ export default function CTA() {
 
         {/* Main Heading (Wide stacked style) */}
         <h2 className="flex flex-col items-center justify-center mb-10 select-none">
-          <span className="block text-white font-black text-[36px] sm:text-[54px] md:text-[86px] leading-[0.85] tracking-[-0.03em] uppercase" style={{ transform: 'scaleX(1.4)', transformOrigin: 'center' }}>
+          <span className="block text-white font-black text-[36px] sm:text-[54px] md:text-[86px] leading-[0.85] tracking-[-0.03em] uppercase" style={{ transform: 'scaleX(1.1) scale(0.9)', transformOrigin: 'center' }}>
             Your genome
           </span>
-          <span className="block text-white font-black text-[36px] sm:text-[54px] md:text-[86px] leading-[0.85] tracking-[-0.03em] uppercase" style={{ transform: 'scaleX(1.4)', transformOrigin: 'center' }}>
+          <span className="block text-white font-black text-[36px] sm:text-[54px] md:text-[86px] leading-[0.85] tracking-[-0.03em] uppercase" style={{ transform: 'scaleX(1.1) scale(0.9)', transformOrigin: 'center' }}>
             data
           </span>
-          <span className="block text-white font-black text-[36px] sm:text-[54px] md:text-[86px] leading-[0.85] tracking-[-0.03em] uppercase" style={{ transform: 'scaleX(1.4)', transformOrigin: 'center' }}>
+          <span className="block text-white font-black text-[36px] sm:text-[54px] md:text-[86px] leading-[0.85] tracking-[-0.03em] uppercase" style={{ transform: 'scaleX(1.1) scale(0.9)', transformOrigin: 'center' }}>
             deserves
           </span>
-          <span className="block text-[#00D68F] font-black text-[36px] sm:text-[54px] md:text-[86px] leading-[0.85] tracking-[-0.03em] uppercase" style={{ transform: 'scaleX(1.4)', transformOrigin: 'center' }}>
+          <span className="block text-[#00D68F] font-black text-[36px] sm:text-[54px] md:text-[86px] leading-[0.85] tracking-[-0.03em] uppercase" style={{ transform: 'scaleX(1.1) scale(0.9)', transformOrigin: 'center' }}>
             better.
           </span>
         </h2>
