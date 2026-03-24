@@ -100,7 +100,7 @@ export default function SocialProof() {
               key={i} 
               className={`stat-border-reveal pt-6 text-center md:text-left md:pl-8 first:pl-0 flex flex-col items-center md:items-start ${counted ? 'counted' : ''}`}
             >
-              <div className="font-display text-[44px] md:text-[72px] leading-none mb-3">
+              <div className="font-display text-[32px] md:text-[72px] leading-none mb-3">
                 <Counter
                   target={stat.target}
                   prefix={stat.prefix}

@@ -42,7 +42,7 @@ export default function Problem() {
             </div>
           </div>
           
-          <h2 className="text-[64px] sm:text-[80px] lg:text-[100px] font-sans font-black leading-[0.9] tracking-tighter text-white mb-16 capitalize">
+          <h2 className="text-[38px] sm:text-[80px] lg:text-[100px] font-sans font-black leading-[0.9] tracking-tighter text-white mb-10 capitalize">
             <div className="block">Your</div>
             <div className="block">Current</div>
             <div className="block">Stack Is</div>

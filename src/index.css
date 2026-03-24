@@ -21,16 +21,18 @@
 
 html {
   scroll-behavior: smooth;
-  /* overflow-x: hidden; */ /* Removing from html to avoid conflicts */
+  overflow-x: hidden;
+  max-width: 100vw;
 }
 
 body {
   background-color: var(--void);
   color: var(--white);
-  overflow-x: hidden; /* Keep here for horizontal safety */
+  overflow-x: hidden;
+  max-width: 100vw;
   width: 100%;
   position: relative;
-  -webkit-overflow-scrolling: touch; /* Enhance mobile scroll if needed */
+  -webkit-overflow-scrolling: touch;
 }
 
 section[id] {

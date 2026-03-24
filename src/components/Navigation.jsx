@@ -83,8 +83,12 @@ export default function Navigation() {
         }`}
       >
         <div className="max-w-[1440px] mx-auto px-6 md:px-10 flex items-center justify-between">
-          {/* Logo Removed as per request */}
-          <div className="flex items-center" />
+          {/* Logo restored with footer style */}
+          <Link to="/" className="flex items-center cursor-pointer select-none group" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+            <div className="font-mono text-white text-[16px] md:text-lg font-medium tracking-widest flex items-center">
+              DNAAnalyzer<span className="text-phosphor rounded-full w-1.5 h-1.5 bg-phosphor inline-block ml-1 group-hover:scale-150 transition-transform"></span>
+            </div>
+          </Link>
 
           {/* Desktop Links (Centered) */}
           <div className="hidden md:flex items-center absolute left-1/2 -translate-x-1/2 space-x-10">

@@ -49,7 +49,7 @@ export default function UseCases() {
             </div>
           </div>
           
-          <h2 className="text-[48px] sm:text-[60px] lg:text-[76px] font-sans font-black text-white leading-[1.0] tracking-[-0.04em] mb-6 inline-block" style={{ transform: 'scaleX(1.15)', transformOrigin: 'left center' }}>
+          <h2 className="text-[32px] sm:text-[60px] lg:text-[76px] font-sans font-black text-white leading-[1.0] tracking-[-0.04em] mb-6 inline-block transform-none sm:scale-x-[1.15] origin-left" style={{ transformOrigin: 'left center' }}>
             Every Role, Every Workflow.
           </h2>
           <p className="text-[#64748B] font-mono text-[14px]">
