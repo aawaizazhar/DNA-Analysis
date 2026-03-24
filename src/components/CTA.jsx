@@ -35,16 +35,16 @@ export default function CTA() {
 
         {/* Main Heading (Wide stacked style) */}
         <h2 className="flex flex-col items-center justify-center mb-10 select-none">
-          <span className="block text-white font-black text-[36px] sm:text-[54px] md:text-[86px] leading-[0.85] tracking-[-0.03em] uppercase" style={{ transform: 'scaleX(1.1) scale(0.9)', transformOrigin: 'center' }}>
+          <span className="block text-white font-black text-[36px] sm:text-[54px] md:text-[86px] leading-[0.85] tracking-[-0.03em] uppercase scale-x-100 md:scale-x-[1.4] origin-center" style={{ transformOrigin: 'center' }}>
             Your genome
           </span>
-          <span className="block text-white font-black text-[36px] sm:text-[54px] md:text-[86px] leading-[0.85] tracking-[-0.03em] uppercase" style={{ transform: 'scaleX(1.1) scale(0.9)', transformOrigin: 'center' }}>
+          <span className="block text-white font-black text-[36px] sm:text-[54px] md:text-[86px] leading-[0.85] tracking-[-0.03em] uppercase scale-x-100 md:scale-x-[1.4] origin-center" style={{ transformOrigin: 'center' }}>
             data
           </span>
-          <span className="block text-white font-black text-[36px] sm:text-[54px] md:text-[86px] leading-[0.85] tracking-[-0.03em] uppercase" style={{ transform: 'scaleX(1.1) scale(0.9)', transformOrigin: 'center' }}>
+          <span className="block text-white font-black text-[36px] sm:text-[54px] md:text-[86px] leading-[0.85] tracking-[-0.03em] uppercase scale-x-100 md:scale-x-[1.4] origin-center" style={{ transformOrigin: 'center' }}>
             deserves
           </span>
-          <span className="block text-[#00D68F] font-black text-[36px] sm:text-[54px] md:text-[86px] leading-[0.85] tracking-[-0.03em] uppercase" style={{ transform: 'scaleX(1.1) scale(0.9)', transformOrigin: 'center' }}>
+          <span className="block text-[#00D68F] font-black text-[36px] sm:text-[54px] md:text-[86px] leading-[0.85] tracking-[-0.03em] uppercase scale-x-100 md:scale-x-[1.4] origin-center" style={{ transformOrigin: 'center' }}>
             better.
           </span>
         </h2>
@@ -56,10 +56,10 @@ export default function CTA() {
 
         {/* Primary Button */}
         <div className="flex justify-center">
-          <button className="bg-[#00D68F] hover:bg-white text-void font-bold px-10 py-4 text-[13px] md:text-[14px] transition-all duration-300 active:scale-95 flex items-center gap-2 group">
+          <Link to="/auth" className="bg-[#00D68F] hover:bg-white text-void font-bold px-10 py-4 text-[13px] md:text-[14px] transition-all duration-300 active:scale-95 flex items-center gap-2 group">
             Create Free Account 
             <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
-          </button>
+          </Link>
         </div>
       </div>
     </section>

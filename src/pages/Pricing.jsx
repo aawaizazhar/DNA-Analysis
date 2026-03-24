@@ -67,7 +67,7 @@ export default function Pricing() {
       <div className="max-w-[1240px] mx-auto relative z-10">
         <div className="text-center mb-20">
           <div className="font-mono text-[11px] text-[#00D68F] uppercase tracking-[0.4em] mb-8">PRICING TIERS</div>
-          <h1 className="text-display text-[48px] md:text-[84px] text-white font-black leading-[0.85] uppercase tracking-tight mb-8" style={{ transform: 'scaleX(1.4)', transformOrigin: 'center' }}>
+          <h1 className="text-display text-[36px] md:text-[84px] text-white font-black leading-[0.85] uppercase tracking-tight mb-8 scale-x-100 md:scale-x-[1.4] origin-center" style={{ transformOrigin: 'center' }}>
             Scale Your <span className="text-phosphor">Insight.</span>
           </h1>
           <p className="text-[#64748B] font-mono text-[14px] md:text-[18px] leading-[1.8] max-w-[600px] mx-auto">
