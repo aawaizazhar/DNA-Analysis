@@ -1,17 +1,17 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navigation from './components/Navigation';
-import Footer from './components/Footer';
-import CustomCursor from './components/CustomCursor';
+import Navigation from './components/navigation-bar';
+import Footer from './components/footer';
+import CustomCursor from './components/custom-cursor';
 
 // Pages
-import Home from './pages/Home';
-import Auth from './pages/Auth';
-import Contact from './pages/Contact';
-import Pricing from './pages/Pricing';
-import Capabilities from './pages/Capabilities';
-import Pipeline from './pages/Pipeline';
-import Applications from './pages/Applications';
+import Home from './pages/home-page';
+import Auth from './pages/authentication-page';
+import Contact from './pages/contact-page';
+import Pricing from './pages/pricing-page';
+import Capabilities from './pages/capabilities-page';
+import Pipeline from './pages/pipeline-page';
+import Applications from './pages/applications-page';
 
 function App() {
   return (

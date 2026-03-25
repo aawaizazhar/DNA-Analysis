@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
-import CTA from '../components/CTA';
+import CTA from '../components/call-to-action';
 
 export default function Capabilities() {
   const [vis, setVis] = useState(false);

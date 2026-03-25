@@ -106,13 +106,25 @@ export default function Hero() {
     );
   }
 
-  const tickerHtml = ticker
-    .replace(/\[T→A\]/g, '<span style="color:#F87171">[T→A]</span>')
-    .replace(/\[G→C\]/g, '<span style="color:#F87171">[G→C]</span>')
-    .replace(/\[A→T\]/g, '<span style="color:#F87171">[A→T]</span>')
-    .replace(/PATHOGENIC/g, '<span style="color:#F87171">PATHOGENIC</span>')
-    .replace(/LIKELY_PATHOGENIC/g, '<span style="color:#F87171">LIKELY_PATHOGENIC</span>')
-    .replace(/BENIGN/g, '<span style="color:#00D68F">BENIGN</span>');
+const renderTicker = (text) => {
+  const regex = /(\[T→A\]|\[G→C\]|\[A→T\]|PATHOGENIC|LIKELY_PATHOGENIC|BENIGN)/g;
+  const parts = text.split(regex);
+  return parts.map((part, index) => {
+    switch (part) {
+      case '[T→A]':
+      case '[G→C]':
+      case '[A→T]':
+      case 'PATHOGENIC':
+      case 'LIKELY_PATHOGENIC':
+        return <span key={index} className="text-[#F87171]">{part}</span>;
+      case 'BENIGN':
+        return <span key={index} className="text-[#00D68F]">{part}</span>;
+      default:
+        return <span key={index}>{part}</span>;
+    }
+  });
+};
+const TICKER_ELEMENTS = renderTicker(ticker);
 
   return (
     <>
@@ -200,13 +212,13 @@ export default function Hero() {
           className="inline-block hover:[animation-play-state:paused] cursor-default select-none will-change-transform"
           style={{ fontFamily: '"JetBrains Mono", monospace', fontSize: '12px', color: '#1E2D4A', animation: 'marquee 35s linear infinite' }}
         >
-          <span dangerouslySetInnerHTML={{ __html: tickerHtml }} />
+          {TICKER_ELEMENTS}
         </div>
         <div
           className="inline-block hover:[animation-play-state:paused] cursor-default select-none will-change-transform opacity-50"
           style={{ fontFamily: '"JetBrains Mono", monospace', fontSize: '12px', color: '#1E2D4A', animation: 'marquee 40s linear infinite reverse' }}
         >
-          <span dangerouslySetInnerHTML={{ __html: tickerHtml }} />
+          {TICKER_ELEMENTS}
         </div>
       </div>
     </>

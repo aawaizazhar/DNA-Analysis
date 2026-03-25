@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
-import CTA from '../components/CTA';
+import CTA from '../components/call-to-action';
 
 const StepSection = ({ step, index, active }) => {
   return (

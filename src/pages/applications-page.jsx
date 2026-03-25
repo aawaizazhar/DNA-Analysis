@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import CTA from '../components/CTA';
+import CTA from '../components/call-to-action';
 
 const ApplicationCard = ({ role, tag, title, desc, quote, stat, statLabel, delay }) => {
   const [vis, setVis] = useState(false);
